@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plantilla Responsive</title>
+    <link rel="stylesheet" href="css/appcoa.css">
+    <script src="https://unpkg.com/vue@3.4.30/dist/vue.global.js"></script>
+    <script src="https://unpkg.com/vue-router@4.4.0/dist/vue-router.global.js"></script>
+</head>
+<body>
+
+    <div id="app">
+        <nav>
+            <router-link to="/">Inicio</router-link>
+            <router-link to="/about">Acerca de</router-link>
+            <router-link to="/contact">Contacto</router-link>
+            <router-link to="/login">Login</router-link>
+        </nav>
+        <div class="container">
+            <router-view></router-view>
+        </div>
+    </div>
+
+    
+
+    <footer>
+        <p>&copy; 2024 Barbacoa Go</p>
+    </footer>
+
+<script src="js/appcoa.js"></script>
+</body>
+</html>
